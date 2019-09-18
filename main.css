@@ -1,0 +1,16 @@
+h1 {
+	font-family: Helvetica;
+	letter-spacing: 1px;
+	color: black;
+	font-size: 24pt;
+	margin-left: 30pt;
+	margin-top: 30pt;
+}
+
+a {
+	font-family: Helvetica;
+	letter-spacing: 1px;
+	color: black;
+	font-size: 12pt;
+	margin-left: 30pt;
+}
