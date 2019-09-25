@@ -17,9 +17,9 @@ body {
 
 .content {
 	background: white;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 	position:relative;
-	top:1000px;
+	top: 890px;
 }
 
 
@@ -33,7 +33,7 @@ h1 {
 	padding-bottom: 50px;
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
-	font-size: 42pt;
+	font-size: 40pt;
 	line-height: 45pt;
 }
 
