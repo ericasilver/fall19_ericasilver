@@ -1,0 +1,49 @@
+* {
+	margin:0;
+	border:0;
+}
+
+
+head {
+	background-image: url("ella_cover2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+body {
+	padding-bottom: 10%;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	padding: 25%;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 42pt;
+	line-height: 45pt;
+}
+
+p {
+	padding: 0 25%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14pt;
+	line-height: 20pt;
+}
+
+.pullquote {
+	padding: 0 30%;
+	font-family: 'Playfair Display', serif;
+	font-weight: 100;
+	font-size: 21pt;
+	font-style: italic;
+	line-height: 28pt;
+	letter-spacing: .25pt;
+	text-align: left;
+
+}
