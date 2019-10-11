@@ -1,0 +1,227 @@
+<html>
+	<head>
+		<style>	
+			.wrapper {
+        		display: inline-block;
+        		position: relative;
+        		float: left;
+        		width: 20%;
+        		height: 400px;
+        		margin: 2rem;
+        		border: solid black;
+        		background-color: black;
+        	}
+            .swrapper {
+                display: inline-block;
+                position: relative;
+                float: left;
+                width: 20%;
+                height: 300px;
+                top: 200px;
+                left: 12px;
+                margin: 2rem;
+                background-color: none;
+            }
+
+
+
+            .text {
+                font-family: sans-serif;
+                font-size: 150pt;
+                top: 10px;
+            }
+
+
+
+        	.straight-horizontal {
+                width: 100%;
+        		height: 30%;
+        		background-color: pink;
+        	}
+        	.straight-vertical-left {
+        		width: 30%;
+				height: 5%;
+                background-color: pink;
+        	}
+        	.straight-vertical-right {
+        		width: 30%;
+				height: 5%;
+                background-color: pink;
+                margin-left: 70%;
+        	}
+
+            .straight-horizontal:hover {
+                background-color: aliceblue;
+            }
+
+
+            @-webkit-keyframes long {
+                0% { width: 100% }
+                25% { width: 300% }
+                50% { width: 305% }
+                75% { width: 300% }
+                100% { width: 100% }
+            }
+        	.round-horizontal1 {
+                width: 100%;
+        		height: 30%;
+        		border-radius: 100px 100px 100px 0px;
+        		background-color: aquamarine;
+                -webkit-animation-name: long;
+                animation-name: long;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+                z-index: 100;
+        	}
+        	.round-horizontal2 {
+                width: 100%;
+        		height: 30%;
+        		border-radius: 0px 75px 0px 75px;
+        		background-color: aquamarine;
+        	}
+        	.round-horizontal3{
+        		width: 100%;
+        		height: 30%;
+        		border-radius: 100px 0px 100px 100px;
+        		background-color: aquamarine;
+        	}
+            .round-vertical-left {
+        		width: 30%;
+				height: 5%;
+                background-color: aquamarine;
+        	}
+        	.round-vertical-right {
+        		width: 30%;
+				height: 5%;
+                background-color: aquamarine;
+                margin-left: 70%;
+        	}
+
+
+
+			.oval1 {
+				height: 33.3%;
+  				width: 100%;
+  				background-color: papayawhip;
+  				border-radius: 50%;
+			}
+			.circle1{
+				position: absolute;
+				top: 92px;
+				height: 80px;
+				width: 80px;
+				background-color: papayawhip;
+				border-radius: 50%;
+			}
+			.circle2{
+				position: absolute;
+				top: 225px;
+				right: 0px;
+				height: 80px;
+				width: 80px;
+				background-color: papayawhip;
+				border-radius: 50%;
+			}
+            .oval1:hover {
+                transform: scale(.5); 
+            }
+            .circle1:hover {
+                transform: scale(.5);
+            }
+            .circle2:hover {
+                transform: scale(.5);
+            }
+
+
+
+            @-webkit-keyframes colorchange {
+                0% { background-color: palegreen; }
+                25% { background-color: powderblue; }
+                50% { background-color: plum; }
+                75% { background-color: powderblue; }
+                100% { background-color: palegreen; }
+            }
+			.oval2{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				background-color: powderblue;
+				stroke: 1px powderblue;
+                -webkit-animation-name: colorchange;
+                animation-name: colorchange;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+			}
+			.triangle1{
+				position: absolute;
+				top: 110px;
+                right: 0;
+				width: 0;
+				height: 0;
+				border-top: 45px solid transparent;
+				border-right: 200px solid black;
+				border-bottom: 45px solid transparent;
+			}
+            .triangle2{
+                position: absolute;
+                top: 205px;
+                width: 0;
+                height: 0;
+                border-top: 45px solid transparent;
+                border-right: 200px solid black;
+                border-bottom: 45px solid transparent;
+                transform: scaleX(-1);
+            }
+
+
+
+            .trapezoid {
+                border-bottom: 200px solid lightsalmon;
+                border-left: 233px solid transparent;
+                border-right: 0px solid transparent;
+                height: 0;
+                width: 100px;
+            }
+</style>
+
+
+
+	</head>
+	<body>
+		<div class="wrapper">
+    		<div class="straight-horizontal"></div>
+    		<div class="straight-vertical-left"></div>
+    		<div class="straight-horizontal"></div>
+    		<div class="straight-vertical-right"></div>
+    		<div class="straight-horizontal"></div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="round-horizontal1"></div>
+    		<div class="round-vertical-left"></div>
+    		<div class="round-horizontal2"></div>
+    		<div class="round-vertical-right"></div>
+    		<div class="round-horizontal3"></div>
+        </div>
+        <div class="swrapper" style="clear: right">
+            <div class="text"></div>
+        </div>
+            <div class="wrapper" style="clear: left">
+            <div class="oval2"></div>
+            <div class="triangle1"></div>
+            <div class="triangle2"></div>
+        </div>
+    	<div class="wrapper">
+    		<div class="oval1"></div>
+        	<div class="oval1"></div>
+        	<div class="oval1"></div>
+        	<div class="circle1"></div>
+        	<div class="circle2"></div>
+        </div>
+        <div class="wrapper">
+            <div class="trapezoid"></div>
+            <div class="trapezoid"></div>
+        </div>
+
+	</body>
+</html>
