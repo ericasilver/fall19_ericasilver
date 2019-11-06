@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mom MD</title>
+		<link rel="stylesheet" type="text/css" href="mommd.css">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<img src="mommd.svg" class="logo"/>
+
+ 		 <form class="search-container">
+   		 <input type="text" id="search-bar" placeholder="Search">
+    		<a id=bttn onclick="myFunction()"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+  		</form>
+  		<div id="result">
+  		</div>
+
+  		<script type="text/javascript">
+		var input = document.getElementById("search-bar");
+		input.addEventListener("keyup", function(event) {
+		 if (event.keyCode === 13) {
+    	event.preventDefault();
+    	document.getElementById("bttn").click();
+  		}
+		});
+
+  			var myArray = [
+  			"Are you okay, honey?",
+  			"Oh no, what's wrong?",
+  			"It's okay, you'll get better soon.",
+  			"You're so great, even germs like you!",
+  			"I know it is no fun to be sick.",
+  			"Take care, my little angel.",
+  			"Please lose all your worries, you'll be okay.",
+  			"I know things are tough right now, but I know you’re tougher!",
+  			"For now, let somebody else do all the doing.",
+  			"You need it, I got it! Whatever it is.",
+  			"Even superheroes need a time to rest!",
+  			"You are loved.",
+  			""
+  			'<iframe src="https://giphy.com/embed/yEktkaaGsDvYQ" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/1VVK8MkhTTZIEELV9H" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/mORcR6Td29gIw" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/xT5LMXkxegtVl9LlLi" width="480" height="364" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/M5TpsXuyM27pC" width="480" height="362" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/AFoPgvhenIgYE" width="480" height="192" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/3o7TKnQ7eAN9mbraVO" width="480" height="330" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/1APcmTq3SJaMCopirx" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/hMPF4mGrr28Wk" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/9QI3sUKDDj3eo" width="480" height="416" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/ADklScLQY0cQU" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/MofrHPU72oXW8" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/GCw08hyCSh5fO" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/WJOq6yKop0A1y" width="480" height="477" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/Y42mxGkQ8F1EVkUFyf" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/2HQmjG6PinIQM" width="480" height="272" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/12lgfN0mH3zh6g" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/VCzhhGsOVH2PNIa3hQ" width="480" height="427" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/ch2Cjg4XfGQo9u0ACW" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/kWpCMNhwKoKuA" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/Qw1801KcIOZ2W38F80" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/l4EoXRyiANoHfc25i" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/5eF7nympzrTNKrggfG" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/1XJ3HUQv3lpgk" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+  			'<iframe src="https://giphy.com/embed/oOiCRgBRb3dQv5S22K" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>',
+
+			];
+
+			function myFunction() {
+				console.log("hhhh") ;
+				var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+  				document.getElementById("result").innerHTML = randomItem;
+			}
+
+  		</script>
+	</body>
+</html>
