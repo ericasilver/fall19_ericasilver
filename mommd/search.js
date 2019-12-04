@@ -64,7 +64,7 @@ function myFunction() {
         '<img class="gifs" src="gif/13.gif">',
         '<img class="gifs" src="gif/14.gif">',
         '<img class="gifs" src="gif/15.gif">',
-        '<img class="gifs" src="gif/16.gif">',
+        // '<img class="gifs" src="gif/16.gif">',
         '<img class="gifs" src="gif/17.gif">',
         '<img class="gifs" src="gif/18.gif">',
         '<img class="gifs" src="gif/19.gif">',
