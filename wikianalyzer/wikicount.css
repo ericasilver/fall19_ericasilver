@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Helvetica;
+	margin: 3%;
+}
+
+h1 {
+	font-size: 42pt;
+}
+
+
+h2 {
+	font-size: 42pt;
+	line-height: 42pt;
+}
+
+p {
+	margin-top: 5%;
+	font-family: Helvetica;
+	text-decoration: none;
+	font-size: 16pt;
+	line-height: 0pt;
+}
+
+ol {
+	margin-top: 5%;
+	font-family: Helvetica;
+	text-decoration: none;
+	font-size: 16pt;
+	line-height: 24pt;
+}
+
+a {
+	display: block;
+	color: black;
+}
+
+a:hover {
+	font-style: italic;
+}
+
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 350px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-big {
+  float: left;
+  width: 66.66%;
+  padding: 10px;
+  height: 350px;}
