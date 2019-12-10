@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(to bottom, aqua 0%, #ff99cc 100%);
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+h1 {
+	font-family: Helvetica;
+	color: black;
+	font-size: 62pt;
+	transform: skew(-40deg);
+}
+
+h2 {
+	font-family: Helvetica;
+	transform: skew(40deg);
+}
+
+
+a {
+	font-family: Helvetica;
+	color: black;
+	font-size: 12pt;
+}
+
+img {
+	width: 40%;
+}
