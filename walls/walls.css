@@ -4,7 +4,7 @@
 }
 
 body{
-	background-color: black;
+	background: linear-gradient(to bottom, aqua 0%, #ff99cc 100%);
 	overflow-x: hidden;
 }
 
@@ -15,7 +15,7 @@ body{
 
 .header{
 	position: fixed;
-	background-color: black;
+	background-color: aqua ;
 	top: 0;
 	width: 100%;
 	height: 5%;
@@ -28,7 +28,7 @@ body{
 	font-size: 21pt;
 	float: left;
 	display: block;
-	color: white;
+	color: black;
 	text-align: center;
 	padding-top: 15px;
 	position: fixed;
@@ -45,7 +45,7 @@ body{
 	top: 15px;
 	font-size: 21pt;
 	padding: none;
-	color: white;
+	color: black;
 	animation: blink 1s linear infinite;
 }
 
@@ -72,14 +72,14 @@ p {
 	font-family: 'DearKatie';
 	font-size: 21pt;
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 ul {
 	font-family: 'DearKatie';
 	font-size: 21pt;
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 
@@ -96,7 +96,7 @@ ul {
 	text-decoration: none;
 	font-size: 21pt;
 	text-align: center;
-	color: white;
+	color: black;
 
 }
 
@@ -120,20 +120,20 @@ ul {
 	padding-right: 60px;
 	font-family: 'DearKatie';
 	font-size: 21pt;
-	color: white;
+	color: black;
 }
 
 .where{
 	text-align: center;
 	font-family: 'DearKatie';
 	font-size: 21pt;
-	color: white;
+	color: black;
 }
 
 .button{
-	background-color: black;
-	color: white;
-	border: 2px solid white;
+	background-color: aqua;
+	color: black;
+	border: 2px solid aqua;
 	padding: 8px;
 	position: relative;
 	display: inline-block;
